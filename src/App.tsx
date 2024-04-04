@@ -8,32 +8,37 @@ import { getProductData } from "./app/slices/productSlice";
 import ProductReview from "./Components/ProductReview";
 import Sales from "./Components/Sales";
 import SalesDetails from "./Components/SalesDetails";
+import load from "./assests/imgs/loading.gif";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
   const { loading } = useAppSelector((app) => app.product);
 
-  useEffect(() =>{
-    dispatch(getProductData())
-  },[dispatch])
-
-  if(loading) {
-    return <div className="loading">Loading...</div>
-  }
+  useEffect(() => {
+    dispatch(getProductData());
+  }, [dispatch]);
 
   return (
-    <div className="App">
-      <Header />
-      <MainContainer>
-        <div className="overview">
-          <ProductReview/>
+    <>
+      {loading ? (
+        <div className="loading">
+          <img src={load} alt="Loading" />
         </div>
-        <div className="details">
-          <Sales/>
-          <SalesDetails/>
+      ) : (
+        <div className="App">
+          <Header />
+          <MainContainer>
+            <div className="overview">
+              <ProductReview />
+            </div>
+            <div className="details">
+              <Sales />
+              <SalesDetails />
+            </div>
+          </MainContainer>
         </div>
-      </MainContainer>
-    </div>
+      )}
+    </>
   );
 };
 

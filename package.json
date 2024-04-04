@@ -15,6 +15,7 @@
     "chart.js": "^4.4.2",
     "chartjs-adapter-date-fns": "^3.0.0",
     "date-fns": "^3.6.0",
+    "jest": "^27.5.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
@@ -38,11 +39,8 @@
   },
   "jest": {
     "transformIgnorePatterns": [
-      "node_modules/(?!axios/)"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "<rootDir>/src/test/styleMock.js"
-    }
+      "/node_modules/(?!chartjs-adapter-date-fns).+\\.js$"
+    ]
   },
   "browserslist": {
     "production": [
