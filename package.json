@@ -36,6 +36,14 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!axios/)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "<rootDir>/src/test/styleMock.js"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
