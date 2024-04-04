@@ -7,6 +7,7 @@ import { useAppSelector } from "./app/hooks";
 import { getProductData } from "./app/slices/productSlice";
 import ProductReview from "./Components/ProductReview";
 import Sales from "./Components/Sales";
+import SalesDetails from "./Components/SalesDetails";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const App: React.FC = () => {
         </div>
         <div className="details">
           <Sales/>
-          <Sales/>
+          <SalesDetails/>
         </div>
       </MainContainer>
     </div>
