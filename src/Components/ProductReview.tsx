@@ -15,13 +15,14 @@ const ProductReview: React.FC = () => {
         <h2 className="product-title">{product.title}</h2>
         <p className="product-subtitle">{product.subtitle}</p>
       </div>
-
-      <div className="tags">
-        {product.tags.map((tag) => (
-          <span key={tag} className="tag">
-            {tag}
-          </span>
-        ))}
+      <div className="borders">
+        <div className="tags">
+          {product.tags.map((tag) => (
+            <span key={tag} className="tag">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </ProductReviewContainer>
   );
