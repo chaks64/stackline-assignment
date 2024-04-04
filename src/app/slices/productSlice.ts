@@ -15,13 +15,13 @@ const initState: ProductDetails = {
   subtitle: "",
 };
 
-export const getProductData = createAsyncThunk('product/fetchProducts', async (_, { rejectWithValue }) => {
+export const getProductData: any = createAsyncThunk('product/fetchProducts', async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get<ProductDetails>('https://api.myjson.online/v1/records/521b1191-89a7-443a-b1fc-9ffa7cd93741');
       if(response.status !== 200){
         throw new Error("Issue with the response, please try later")
       }
-      return response;
+      return response.data;
     } catch (error) {
       const err = error as AxiosError;
       if (err.response) {

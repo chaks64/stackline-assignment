@@ -3,7 +3,7 @@ import productReducer from "./slices/productSlice";
 
 export const store = configureStore({
   reducer: {
-    photo: productReducer
+    product: productReducer
 
   },
 });

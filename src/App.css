@@ -1,7 +1,12 @@
 .App {
   display: flex;
-	flex-direction: column;
-	height: 100vh;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* .App-logo {
