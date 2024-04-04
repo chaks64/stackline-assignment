@@ -1,6 +1,7 @@
 {
   "name": "stackline-assignment",
   "version": "0.1.0",
+  "homepage": "https://chaks64.github.io/stackline-assignment",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
