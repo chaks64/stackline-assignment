@@ -23,7 +23,6 @@ Before getting started, ensure that you have Node.js and npm installed on your m
 
 - Node.js (version 16.20.1 or higher)
 - npm package manager (version 8.19.4 or higher)
-- git or gitHub GUI
 
 1. Visit the official Node.js website: [nodejs.org](https://nodejs.org).
 2. Choose the version that corresponds to your operating system (Windows, macOS, or Linux).
