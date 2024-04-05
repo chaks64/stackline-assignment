@@ -45,7 +45,7 @@ Before getting started, ensure that you have Node.js and npm installed on your m
    git --version
    ```
 
-### 2. Clone the GitHub repository and build the docker image 
+### 2. Clone the GitHub repository
 
    - Clone the GitHub repository
    ```shell 
