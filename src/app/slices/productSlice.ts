@@ -20,7 +20,7 @@ export const getProductData: any = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        "https://api.myjson.online/v1/records/a3bc5eed-743d-46a9-902f-3eff98e9ffde"
+        "https://api.myjson.online/v1/records/521b1191-89a7-443a-b1fc-9ffa7cd93741"
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");

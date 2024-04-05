@@ -2,45 +2,75 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Assignment Details
+Following technologies are used for the development.
+- Library: React v18
+- Language: TypeScript
+- Charts and Data visualization: Chart.js
+- Testing: Jest
+- State management: Redux and Redux toolkit
 
-In the project directory, you can run:
+## Live Demo
+- https://chaks64.github.io/stackline-assignment/
 
-### `npm start`
+## Getting Started to run locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Before getting started, ensure that you have Node.js and npm installed on your machine. Follow the steps below to download and install them:
 
-### `npm test`
+####  Node and NPM
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 16.20.1 or higher)
+- npm package manager (version 8.19.4 or higher)
+- git or gitHub GUI
 
-### `npm run build`
+1. Visit the official Node.js website: [nodejs.org](https://nodejs.org).
+2. Choose the version that corresponds to your operating system (Windows, macOS, or Linux).
+3. Click on the download button to start the download.
+4. Once the download is complete, run the installer and follow the installation instructions.
+5. To verify that Node.js is installed, open a terminal or command prompt and type the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```shell
+   node --version
+   ```
+   ```shell
+   npm --version
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### GIT/ GitHub
+- Downaload Git from here [Git Download](https://git-scm.com/downloads)
+   ```shell
+   git --version
+   ```
 
-### `npm run eject`
+### 2. Clone the GitHub repository and build the docker image 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   - Clone the GitHub repository
+   ```shell 
+   git clone https://github.com/chaks64/stackline-assignment.git 
+   ```
+   
+   - Change into the project directory
+   ``` shell 
+   cd stackline-assignment 
+   ```
+### 3. Install all dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ``` shell 
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 4. Start the application
+   - Run the following command
+   ``` shell 
+   npm start
+   ```
+### 5. To run testcases
+   ``` shell 
+   npm test
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API endpoint for the JSON to TEST 
+- [API Endpoint](https://api.myjson.online/v1/records/521b1191-89a7-443a-b1fc-9ffa7cd93741)
